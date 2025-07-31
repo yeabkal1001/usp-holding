@@ -6,7 +6,7 @@ import { TextRevealCard } from "@/components/ui/text-reveal-card"
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="relative bg-white py-20 lg:py-32">
+    <section id="projects" className="relative bg-[#0C141F] py-20 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
@@ -16,11 +16,11 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-5xl lg:text-6xl font-light text-[#0C141F] mb-6">
+          <h2 className="text-5xl lg:text-6xl font-light text-white mb-6">
             Our <span className="text-[#A9111D] font-normal">Portfolio</span>
           </h2>
           <div className="w-24 h-px bg-[#A9111D] mx-auto mb-8"></div>
-          <p className="text-xl text-[#0C141F]/80 max-w-4xl mx-auto leading-relaxed font-light">
+          <p className="text-xl text-white/80 max-w-4xl mx-auto leading-relaxed font-light">
             Showcasing our commitment to excellence through landmark developments, innovative construction projects, and
             comprehensive property management solutions across multiple markets.
           </p>
@@ -31,7 +31,7 @@ export function ProjectsSection() {
           <TextRevealCard
             text="Premium Developments"
             revealText="Award-Winning Projects"
-            className="border border-[#A9111D]/10 bg-white text-[#0C141F]"
+            className="border border-white/10"
           />
         </div>
 
@@ -113,10 +113,10 @@ export function ProjectsSection() {
               viewport={{ once: true }}
             >
               <BackgroundGradient className="rounded-[22px] p-1 bg-white dark:bg-zinc-900">
-                <div className="bg-white rounded-[20px] p-8 text-center border border-[#A9111D]/10">
+                <div className="bg-[#0C141F] rounded-[20px] p-8 text-center">
                   <div className="text-4xl font-light text-[#A9111D] mb-2">{stat.number}</div>
-                  <div className="text-[#0C141F]/90 font-medium mb-1">{stat.label}</div>
-                  <div className="text-[#0C141F]/60 text-sm">{stat.desc}</div>
+                  <div className="text-white/90 font-medium mb-1">{stat.label}</div>
+                  <div className="text-white/60 text-sm">{stat.desc}</div>
                 </div>
               </BackgroundGradient>
             </motion.div>

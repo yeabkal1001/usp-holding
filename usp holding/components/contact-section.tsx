@@ -5,7 +5,7 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect"
 
 export function ContactSection() {
   return (
-    <section id="contact" className="relative min-h-screen bg-white py-20 lg:py-32">
+    <section id="contact" className="relative min-h-screen bg-[#1A2332] py-20 lg:py-32">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(169,17,29,0.1)_50%,transparent_75%)] bg-[length:60px_60px]"></div>
@@ -20,13 +20,13 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <h2 className="text-5xl lg:text-6xl font-light text-[#0C141F] mb-6">
+          <h2 className="text-5xl lg:text-6xl font-light text-white mb-6">
             Partner with <span className="text-[#A9111D] font-normal">Excellence</span>
           </h2>
           <div className="w-24 h-px bg-[#A9111D] mx-auto mb-8"></div>
           <TextGenerateEffect
             words="Transform your vision into reality with USP Holdings' 25+ years of proven expertise in premium development, construction excellence, and comprehensive property management solutions."
-            className="text-xl text-[#0C141F] max-w-4xl mx-auto leading-relaxed font-light"
+            className="text-xl text-white max-w-4xl mx-auto leading-relaxed font-light"
           />
         </motion.div>
 
@@ -80,15 +80,15 @@ export function ContactSection() {
                   viewport={{ once: true }}
                   className="group"
                 >
-                  <div className="bg-white border border-[#A9111D]/20 rounded-xl p-6 hover:border-[#A9111D]/40 transition-all duration-300 group-hover:bg-[#A9111D]/5">
+                  <div className="bg-[#0C141F]/50 backdrop-blur-sm border border-[#A9111D]/20 rounded-xl p-6 hover:border-[#A9111D]/40 transition-all duration-300 group-hover:bg-[#0C141F]/70">
                     <div className="flex items-start space-x-4">
                       <div className="text-2xl">{contact.icon}</div>
                       <div className="flex-1">
                         <div className="text-sm text-[#A9111D] font-medium uppercase tracking-wide mb-1">
                           {contact.title}
                         </div>
-                        <div className="text-lg font-medium text-[#0C141F] mb-1">{contact.primary}</div>
-                        <div className="text-[#0C141F]/60 text-sm">{contact.secondary}</div>
+                        <div className="text-lg font-medium text-white mb-1">{contact.primary}</div>
+                        <div className="text-white/60 text-sm">{contact.secondary}</div>
                       </div>
                     </div>
                   </div>
@@ -105,10 +105,10 @@ export function ContactSection() {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <div className="bg-white border border-[#A9111D]/20 rounded-2xl p-8">
+            <div className="bg-[#0C141F]/50 backdrop-blur-sm border border-[#A9111D]/20 rounded-2xl p-8">
               <div className="mb-8">
-                <h3 className="text-2xl font-light text-[#0C141F] mb-2">Initiate Partnership</h3>
-                <p className="text-[#0C141F]/70 text-sm">
+                <h3 className="text-2xl font-light text-white mb-2">Initiate Partnership</h3>
+                <p className="text-white/70 text-sm">
                   Connect with our executive team to discuss your next premium development project.
                 </p>
               </div>
@@ -116,67 +116,67 @@ export function ContactSection() {
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-[#0C141F]/90 text-sm font-medium mb-3">First Name *</label>
+                    <label className="block text-white/90 text-sm font-medium mb-3">First Name *</label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 bg-[#A9111D]/5 border border-[#A9111D]/30 rounded-lg text-[#0C141F] placeholder-[#0C141F]/40 focus:outline-none focus:border-[#A9111D] focus:bg-[#A9111D]/10 transition-all duration-300"
+                      className="w-full px-4 py-3 bg-[#0C141F]/30 border border-[#A9111D]/30 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#A9111D] focus:bg-[#0C141F]/50 transition-all duration-300"
                       placeholder="John"
                     />
                   </div>
                   <div>
-                    <label className="block text-[#0C141F]/90 text-sm font-medium mb-3">Last Name *</label>
+                    <label className="block text-white/90 text-sm font-medium mb-3">Last Name *</label>
                     <input
                       type="text"
-                      className="w-full px-4 py-3 bg-[#A9111D]/5 border border-[#A9111D]/30 rounded-lg text-[#0C141F] placeholder-[#0C141F]/40 focus:outline-none focus:border-[#A9111D] focus:bg-[#A9111D]/10 transition-all duration-300"
+                      className="w-full px-4 py-3 bg-[#0C141F]/30 border border-[#A9111D]/30 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#A9111D] focus:bg-[#0C141F]/50 transition-all duration-300"
                       placeholder="Doe"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-[#0C141F]/90 text-sm font-medium mb-3">Corporate Email *</label>
+                  <label className="block text-white/90 text-sm font-medium mb-3">Corporate Email *</label>
                   <input
                     type="email"
-                    className="w-full px-4 py-3 bg-[#A9111D]/5 border border-[#A9111D]/30 rounded-lg text-[#0C141F] placeholder-[#0C141F]/40 focus:outline-none focus:border-[#A9111D] focus:bg-[#A9111D]/10 transition-all duration-300"
+                    className="w-full px-4 py-3 bg-[#0C141F]/30 border border-[#A9111D]/30 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#A9111D] focus:bg-[#0C141F]/50 transition-all duration-300"
                     placeholder="john.doe@company.com"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[#0C141F]/90 text-sm font-medium mb-3">Organization *</label>
+                  <label className="block text-white/90 text-sm font-medium mb-3">Organization *</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 bg-[#A9111D]/5 border border-[#A9111D]/30 rounded-lg text-[#0C141F] placeholder-[#0C141F]/40 focus:outline-none focus:border-[#A9111D] focus:bg-[#A9111D]/10 transition-all duration-300"
+                    className="w-full px-4 py-3 bg-[#0C141F]/30 border border-[#A9111D]/30 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#A9111D] focus:bg-[#0C141F]/50 transition-all duration-300"
                     placeholder="Your Organization"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[#0C141F]/90 text-sm font-medium mb-3">Service Interest *</label>
-                  <select className="w-full px-4 py-3 bg-[#A9111D]/5 border border-[#A9111D]/30 rounded-lg text-[#0C141F] focus:outline-none focus:border-[#A9111D] focus:bg-[#A9111D]/10 transition-all duration-300">
-                    <option value="" className="bg-white text-[#0C141F]">
+                  <label className="block text-white/90 text-sm font-medium mb-3">Service Interest *</label>
+                  <select className="w-full px-4 py-3 bg-[#0C141F]/30 border border-[#A9111D]/30 rounded-lg text-white focus:outline-none focus:border-[#A9111D] focus:bg-[#0C141F]/50 transition-all duration-300">
+                    <option value="" className="bg-[#0C141F] text-white">
                       Select Service Area
                     </option>
-                    <option value="real-estate" className="bg-white text-[#0C141F]">
+                    <option value="real-estate" className="bg-[#0C141F] text-white">
                       Real Estate Development
                     </option>
-                    <option value="construction" className="bg-white text-[#0C141F]">
+                    <option value="construction" className="bg-[#0C141F] text-white">
                       Construction Services
                     </option>
-                    <option value="property-management" className="bg-white text-[#0C141F]">
+                    <option value="property-management" className="bg-[#0C141F] text-white">
                       Property Management
                     </option>
-                    <option value="consultation" className="bg-white text-[#0C141F]">
+                    <option value="consultation" className="bg-[#0C141F] text-white">
                       Strategic Consultation
                     </option>
                   </select>
                 </div>
 
                 <div>
-                  <label className="block text-[#0C141F]/90 text-sm font-medium mb-3">Project Details</label>
+                  <label className="block text-white/90 text-sm font-medium mb-3">Project Details</label>
                   <textarea
                     rows={4}
-                    className="w-full px-4 py-3 bg-[#A9111D]/5 border border-[#A9111D]/30 rounded-lg text-[#0C141F] placeholder-[#0C141F]/40 focus:outline-none focus:border-[#A9111D] focus:bg-[#A9111D]/10 transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 bg-[#0C141F]/30 border border-[#A9111D]/30 rounded-lg text-white placeholder-white/40 focus:outline-none focus:border-[#A9111D] focus:bg-[#0C141F]/50 transition-all duration-300 resize-none"
                     placeholder="Describe your project scope, timeline, and specific requirements..."
                   ></textarea>
                 </div>
@@ -199,7 +199,7 @@ export function ContactSection() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-white border border-[#A9111D]/30 hover:border-[#A9111D] text-[#0C141F] py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2"
+                className="bg-[#0C141F]/50 border border-[#A9111D]/30 hover:border-[#A9111D] text-white py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <span>📞</span>
                 <span className="text-sm font-medium">Direct Call</span>
@@ -207,7 +207,7 @@ export function ContactSection() {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="bg-white border border-[#A9111D]/30 hover:border-[#A9111D] text-[#0C141F] py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2"
+                className="bg-[#0C141F]/50 border border-[#A9111D]/30 hover:border-[#A9111D] text-white py-3 px-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <span>📧</span>
                 <span className="text-sm font-medium">Email Direct</span>
@@ -224,9 +224,9 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="text-center mt-20"
         >
-          <div className="bg-white border border-[#A9111D]/20 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-light text-[#0C141F] mb-4">Ready to Begin Your Next Project?</h3>
-            <p className="text-[#0C141F]/70 mb-6">
+          <div className="bg-[#0C141F]/50 backdrop-blur-sm border border-[#A9111D]/20 rounded-2xl p-8 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-light text-white mb-4">Ready to Begin Your Next Project?</h3>
+            <p className="text-white/70 mb-6">
               Join Fortune 500 companies and government agencies who trust USP Holdings for their most critical
               developments.
             </p>

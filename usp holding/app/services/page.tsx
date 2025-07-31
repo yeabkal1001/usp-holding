@@ -13,7 +13,7 @@ const words = ["Development", "Construction", "Management", "Excellence"]
 
 export default function ServicesPage() {
   return (
-    <div className="relative w-full bg-white overflow-hidden">
+    <div className="relative w-full bg-[#0C141F] overflow-hidden">
       {/* Hero Section for Services */}
       <LampContainer>
         <motion.div
@@ -26,17 +26,19 @@ export default function ServicesPage() {
           }}
           className="mt-8 text-center text-4xl font-medium tracking-tight md:text-7xl"
         >
-          <span className="text-[#0C141F]">Our </span>
-          <FlipWords words={words} className="text-[#0C141F] inline-block" />
+          <span className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-transparent">Our </span>
+          <FlipWords words={words} className="text-white inline-block" />
           <br />
-          <span className="text-[#0C141F]">Services</span>
+          <span className="bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-transparent">
+            Services
+          </span>
         </motion.div>
 
         <motion.p
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-center text-xl text-[#0C141F]/80 max-w-4xl mx-auto mt-8 leading-relaxed font-light"
+          className="text-center text-xl text-white/80 max-w-4xl mx-auto mt-8 leading-relaxed font-light"
         >
           Three specialized divisions working in perfect harmony to deliver comprehensive solutions across real estate
           development, construction excellence, and property management.
@@ -95,7 +97,7 @@ export default function ServicesPage() {
               title="Global Operations"
               description="International presence with operations in the United States and Ethiopia."
               header={
-                <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-[#A9111D]/20 to-[#0C141F]/20 items-center justify-center">
+                <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-[#0C141F]/20 to-[#A9111D]/20 items-center justify-center">
                   <div className="text-6xl">🌍</div>
                 </div>
               }

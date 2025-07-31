@@ -14,7 +14,7 @@ export function AboutSection() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="mt-8 py-4 text-center text-4xl font-medium tracking-tight text-[#0C141F] md:text-7xl"
+          className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
         >
           About USP Holdings
         </motion.div>
@@ -23,7 +23,7 @@ export function AboutSection() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-center text-xl text-[#0C141F]/80 max-w-4xl mx-auto mt-8 leading-relaxed font-light"
+          className="text-center text-xl text-white/80 max-w-4xl mx-auto mt-8 leading-relaxed font-light"
         >
           Established in 1998, USP Holdings has evolved from a single parking facility into a diversified corporation
           managing over $100 million in premium real estate developments, construction projects, and property management

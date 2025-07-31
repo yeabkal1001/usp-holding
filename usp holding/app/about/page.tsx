@@ -12,7 +12,7 @@ import { Spotlight } from "@/components/ui/spotlight"
 
 export default function AboutPage() {
   return (
-    <div className="relative w-full bg-white overflow-hidden">
+    <div className="relative w-full bg-[#0C141F] overflow-hidden">
       {/* Background Effects */}
       <ShootingStars />
       <StarsBackground />
@@ -44,7 +44,7 @@ export default function AboutPage() {
                 transition={{ delay: 0.2, duration: 0.8 }}
               >
                 <div className="text-sm text-[#A9111D] font-medium uppercase tracking-wide mb-4">Our Story</div>
-                <h1 className="text-6xl lg:text-7xl font-light text-[#0C141F] mb-6 leading-tight">
+                <h1 className="text-6xl lg:text-7xl font-light text-white mb-6 leading-tight">
                   About
                   <span className="text-[#A9111D] font-normal block">USP Holdings</span>
                 </h1>
@@ -59,7 +59,7 @@ export default function AboutPage() {
               >
                 <TextGenerateEffect
                   words="From humble beginnings in 1998 with a single 30-space parking facility, USP Holdings has grown into a premier multi-industry corporation managing over $100 million in developments across the United States and internationally."
-                  className="text-xl font-light mb-8 text-[#0C141F]"
+                  className="text-xl font-light mb-8 dark:text-white text-white"
                   filter={true}
                   duration={0.5}
                 />
@@ -81,8 +81,8 @@ export default function AboutPage() {
                     <div className="w-2 h-2 bg-[#A9111D] rounded-full flex-shrink-0"></div>
                     <div>
                       <span className="text-[#A9111D] font-medium">{item.label}:</span>
-                      <span className="text-[#0C141F] font-medium ml-2">{item.value}</span>
-                      <span className="text-[#0C141F]/60 text-sm ml-2">- {item.desc}</span>
+                      <span className="text-white font-medium ml-2">{item.value}</span>
+                      <span className="text-white/60 text-sm ml-2">- {item.desc}</span>
                     </div>
                   </div>
                 ))}
@@ -98,7 +98,7 @@ export default function AboutPage() {
                 <button className="px-8 py-4 bg-[#A9111D] text-white font-medium tracking-wide uppercase text-sm hover:bg-[#A9111D]/90 transition-all duration-300">
                   Our Mission & Vision
                 </button>
-                <button className="px-8 py-4 border-2 border-[#A9111D] text-[#0C141F] font-medium tracking-wide uppercase text-sm hover:bg-[#A9111D] hover:text-white transition-all duration-300">
+                <button className="px-8 py-4 border-2 border-white text-white font-medium tracking-wide uppercase text-sm hover:bg-white hover:text-[#0C141F] transition-all duration-300">
                   Growth Timeline
                 </button>
               </motion.div>
@@ -122,9 +122,9 @@ export default function AboutPage() {
 
                 {/* Overlay Info */}
                 <div className="absolute bottom-6 left-6 right-6">
-                  <div className="bg-[#A9111D]/10 backdrop-blur-sm p-6 rounded-lg border border-[#A9111D]/20">
-                    <h3 className="text-[#0C141F] font-medium text-lg mb-2">25 Years of Excellence</h3>
-                    <p className="text-[#0C141F]/70 text-sm">
+                  <div className="bg-[#0C141F]/80 backdrop-blur-sm p-6 rounded-lg border border-white/10">
+                    <h3 className="text-white font-medium text-lg mb-2">25 Years of Excellence</h3>
+                    <p className="text-white/70 text-sm">
                       Building lasting relationships and creating sustainable communities
                     </p>
                   </div>
@@ -138,15 +138,15 @@ export default function AboutPage() {
                 transition={{ delay: 1, duration: 0.8 }}
                 className="mt-8 grid grid-cols-2 gap-4"
               >
-                <div className="text-center p-4 border border-[#A9111D]/30 rounded bg-white">
+                <div className="text-center p-4 border border-white/20 rounded bg-white/5">
                   <div className="text-2xl text-[#A9111D] mb-2">🏆</div>
-                  <div className="text-sm text-[#A9111D] uppercase tracking-wide">Industry</div>
-                  <div className="text-[#0C141F] font-medium">Leadership</div>
+                  <div className="text-sm text-white/70 uppercase tracking-wide">Industry</div>
+                  <div className="text-white font-medium">Leadership</div>
                 </div>
-                <div className="text-center p-4 border border-[#A9111D]/30 rounded bg-white">
+                <div className="text-center p-4 border border-white/20 rounded bg-white/5">
                   <div className="text-2xl text-[#A9111D] mb-2">🌍</div>
-                  <div className="text-sm text-[#A9111D] uppercase tracking-wide">Global</div>
-                  <div className="text-[#0C141F] font-medium">Presence</div>
+                  <div className="text-sm text-white/70 uppercase tracking-wide">Global</div>
+                  <div className="text-white font-medium">Presence</div>
                 </div>
               </motion.div>
             </motion.div>

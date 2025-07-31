@@ -6,7 +6,7 @@ import { Building, Mail, Phone, MapPin, Globe, Linkedin, Twitter } from "lucide-
 
 export function Footer() {
   return (
-    <footer className="bg-white text-[#0C141F] py-20">
+    <footer className="bg-[#0C141F] text-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
@@ -25,12 +25,12 @@ export function Footer() {
                 className="h-12 w-auto object-contain"
               />
               <div>
-                <div className="text-xl font-light text-[#0C141F]">USP</div>
+                <div className="text-xl font-light">USP</div>
                 <div className="text-[#A9111D] font-normal">HOLDINGS</div>
               </div>
             </div>
 
-            <p className="text-[#0C141F]/70 leading-relaxed">
+            <p className="text-white/70 leading-relaxed">
               Building tomorrow's infrastructure today. 25+ years of excellence in real estate development,
               construction, and property management.
             </p>
@@ -74,7 +74,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-[#0C141F]/70 hover:text-[#A9111D] transition-colors duration-300 flex items-center space-x-2"
+                    className="text-white/70 hover:text-[#A9111D] transition-colors duration-300 flex items-center space-x-2"
                   >
                     <span className="w-1 h-1 bg-[#A9111D] rounded-full"></span>
                     <span>{link.name}</span>
@@ -101,7 +101,7 @@ export function Footer() {
                 "International Projects",
               ].map((service) => (
                 <li key={service}>
-                  <div className="text-[#0C141F]/70 flex items-center space-x-2">
+                  <div className="text-white/70 flex items-center space-x-2">
                     <Building className="w-3 h-3 text-[#A9111D]" />
                     <span>{service}</span>
                   </div>
@@ -122,27 +122,27 @@ export function Footer() {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-[#A9111D] mt-0.5 flex-shrink-0" />
                 <div>
-                  <div className="text-[#0C141F]/90 font-medium">Headquarters</div>
-                  <div className="text-[#0C141F]/70 text-sm">Washington, DC, USA</div>
+                  <div className="text-white/90 font-medium">Headquarters</div>
+                  <div className="text-white/70 text-sm">Washington, DC, USA</div>
                 </div>
               </div>
 
               <div className="flex items-start space-x-3">
                 <Globe className="w-5 h-5 text-[#A9111D] mt-0.5 flex-shrink-0" />
                 <div>
-                  <div className="text-[#0C141F]/90 font-medium">International</div>
-                  <div className="text-[#0C141F]/70 text-sm">Addis Ababa, Ethiopia</div>
+                  <div className="text-white/90 font-medium">International</div>
+                  <div className="text-white/70 text-sm">Addis Ababa, Ethiopia</div>
                 </div>
               </div>
 
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-[#A9111D]" />
-                <span className="text-[#0C141F]/70">+1 (202) 555-0100</span>
+                <span className="text-white/70">+1 (202) 555-0100</span>
               </div>
 
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-[#A9111D]" />
-                <span className="text-[#0C141F]/70">info@uspholdings.com</span>
+                <span className="text-white/70">info@uspholdings.com</span>
               </div>
             </div>
           </motion.div>
@@ -154,21 +154,21 @@ export function Footer() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
-          className="border-t border-[#0C141F]/10 pt-8"
+          className="border-t border-white/10 pt-8"
         >
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-[#0C141F]/60 text-sm">
+            <div className="text-white/60 text-sm">
               © 2024 USP Holdings. All rights reserved. | 25 Years of Excellence
             </div>
 
             <div className="flex items-center space-x-6 text-sm">
-              <Link href="#" className="text-[#0C141F]/60 hover:text-[#A9111D] transition-colors duration-300">
+              <Link href="#" className="text-white/60 hover:text-[#A9111D] transition-colors duration-300">
                 Privacy Policy
               </Link>
-              <Link href="#" className="text-[#0C141F]/60 hover:text-[#A9111D] transition-colors duration-300">
+              <Link href="#" className="text-white/60 hover:text-[#A9111D] transition-colors duration-300">
                 Terms of Service
               </Link>
-              <Link href="#" className="text-[#0C141F]/60 hover:text-[#A9111D] transition-colors duration-300">
+              <Link href="#" className="text-white/60 hover:text-[#A9111D] transition-colors duration-300">
                 Careers
               </Link>
             </div>

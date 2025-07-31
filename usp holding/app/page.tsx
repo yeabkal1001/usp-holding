@@ -13,7 +13,7 @@ import { StarsBackground } from "@/components/ui/stars-background"
 
 export default function Home() {
   return (
-    <div className="relative w-full bg-white overflow-hidden">
+    <div className="relative w-full bg-[#0C141F] overflow-hidden">
       {/* Background Effects */}
       <ShootingStars />
       <StarsBackground />

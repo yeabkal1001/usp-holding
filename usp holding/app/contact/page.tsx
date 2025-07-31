@@ -33,14 +33,14 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="relative w-full bg-white overflow-hidden">
+    <div className="relative w-full bg-[#0C141F] overflow-hidden">
       {/* Hero Section with Wavy Background */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <WavyBackground
           className="max-w-4xl mx-auto pb-40"
-          colors={["#A9111D", "#FFFFFF", "#A9111D", "#FFFFFF"]}
+          colors={["#A9111D", "#0C141F", "#A9111D", "#0C141F"]}
           waveWidth={50}
-          backgroundFill="#FFFFFF"
+          backgroundFill="#0C141F"
           blur={10}
           speed="slow"
           waveOpacity={0.5}
@@ -51,12 +51,12 @@ export default function ContactPage() {
             transition={{ duration: 0.8 }}
             className="text-center px-4"
           >
-            <h1 className="text-6xl lg:text-8xl font-light text-[#0C141F] mb-8">
+            <h1 className="text-6xl lg:text-8xl font-light text-white mb-8">
               Let's Build
               <span className="text-[#A9111D] font-normal block">Together</span>
             </h1>
 
-            <p className="text-xl lg:text-2xl text-[#0C141F]/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+            <p className="text-xl lg:text-2xl text-white/80 max-w-3xl mx-auto mb-12 leading-relaxed font-light">
               Ready to transform your vision into reality? Connect with USP Holdings' executive team to discuss your
               next premium development project.
             </p>
@@ -69,7 +69,7 @@ export default function ContactPage() {
               <HoverBorderGradient
                 containerClassName="rounded-full"
                 as="button"
-                className="bg-white text-[#0C141F] flex items-center space-x-2"
+                className="bg-[#0C141F] text-white flex items-center space-x-2"
               >
                 <span>📞 Schedule a Call</span>
               </HoverBorderGradient>
@@ -77,7 +77,7 @@ export default function ContactPage() {
               <HoverBorderGradient
                 containerClassName="rounded-full"
                 as="button"
-                className="bg-white text-[#0C141F] flex items-center space-x-2"
+                className="bg-[#0C141F] text-white flex items-center space-x-2"
               >
                 <span>📧 Send Message</span>
               </HoverBorderGradient>

@@ -29,18 +29,19 @@ export function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-white shadow-md`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        isScrolled ? "bg-[#0C141F]/95 backdrop-blur-md border-b border-white/10" : "bg-transparent"
+      }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/">
             <motion.div whileHover={{ scale: 1.05 }} className="flex items-center space-x-3 cursor-pointer">
-              <img
-                src="/header-logo-removebg-preview.png"
-                alt="USP Holdings Logo"
-                className="h-10 w-auto object-contain"
-              />
+              <div className="text-2xl font-light text-white">
+                USP
+                <span className="text-[#A9111D] font-normal ml-2">HOLDINGS</span>
+              </div>
             </motion.div>
           </Link>
 
@@ -50,9 +51,7 @@ export function Navigation() {
               <Link key={item.id} href={item.href}>
                 <motion.div
                   className={`relative text-sm font-medium tracking-wide uppercase transition-colors duration-300 cursor-pointer ${
-                    activeSection === item.id
-                      ? "text-[#A9111D]"
-                      : "text-[#0C141F]/80 hover:text-[#0C141F]"
+                    activeSection === item.id ? "text-[#A9111D]" : "text-white/80 hover:text-white"
                   }`}
                   whileHover={{ y: -2 }}
                 >
@@ -82,7 +81,7 @@ export function Navigation() {
           </Link>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-[#0C141F]">
+          <button className="md:hidden text-white">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
